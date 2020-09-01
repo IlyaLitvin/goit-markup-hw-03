@@ -119,6 +119,10 @@ button:focus {
     background-color: var(--accent-color);
 }
 
+button {
+    cursor: pointer;
+}
+
 /* hero */
 
 .hero-title {
