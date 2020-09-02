@@ -113,6 +113,16 @@ button {
   letter-spacing: 0.03em;
 }
 
+.buttons {
+  margin-right: 8px;
+  align-items: center;
+}
+
+/* .hero-buttons {
+  display: flex;
+  margin-left: 90px;
+} */
+
 button:hover,
 button:focus {
   color: var(--primary-white-color);
@@ -166,6 +176,8 @@ button {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .examples-name {
@@ -173,10 +185,18 @@ button {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.examples-photo {
+  margin-bottom: 20px;
 }
 
 .expamles-text {
   color: var(--title-text-color);
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .expamles-text:hover,
