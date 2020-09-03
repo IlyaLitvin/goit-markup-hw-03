@@ -19,8 +19,8 @@
 
     <header class="header container">
         <div class="container head-nav">
-            <a href="./index.html"><img src="./img/WebStudio.svg" alt="WebStudio"></a>
             <nav class="navigation head-nav">
+                <a href="./index.html"><img src="./img/WebStudio.svg" alt="WebStudio"></a>
                 <ul class="site-nav list">
                     <li class="item">
                         <a href="./index.html" class="link current">Студия</a>
@@ -44,16 +44,18 @@
 
     <!-- Основной контент -->
 
-    <main class="">
+    <main class="main">
         <!--  Герой  -->
 
-        <section class="hero container">
-            <!-- <img src="./img/heroimg.jpg" alt="Overlay" width="1600">            -->
-            <h1 class="hero-title">
-                Эффективные решения <br />
-                для вашего бизнеса
-            </h1>
-            <button type="button">Заказать услугу</button>
+        <section class="hero hero-section">
+            <!-- <img src="./img/heroimg.jpg" alt="Overlay">            -->
+            <div class="hero-container">
+                <h1 class="hero-title">
+                    Эффективные решения <br />
+                    для вашего бизнеса
+                </h1>
+                <button type="button">Заказать услугу</button>
+            </div>
         </section>
 
         <!--  Особенности  -->
@@ -121,7 +123,7 @@
 
         <!-- Наша работа  -->
 
-        <section class="section">
+        <section class="section no-padd">
             <div class="section-works">
                 <h2 class="section-name">Чем мы занимаемся</h2>
                 <ul class="works-page">
@@ -134,129 +136,138 @@
 
         <!--  Наша команда  -->
 
-        <section class="section">
+        <section class="section bg">
             <div class="section-team">
                 <h2 class="section-name">Наша команда</h2>
                 <ul class="section-team-list list">
-                    <li>
+                    <li class="team-card-name">
                         <img src="./img/ourteam/img.jpg" alt="Игорь Демьяненко" width="270" />
-                        <h3 class="team">Игорь Демьяненко</h3>
-                        <p class="work-name">Product Designer</p>
-                        <!-- <ul class="list">
-                                            <li>
-                                                <svg class="social-list">
-                                                    <use xlink:href="./img/social/social.svg#instagram-icon" width="20" height="20">
-                                                    </use>
-                                                </svg>
-                                            </li>
-                                            <li>
-                                                <svg class="social-list">
-                                                    <use xlink:href="./img/social/social.svg#twitter-icon" width="20" height="20"></use>
-                                                </svg>
-                                            </li>
-                                            <li>
-                                                <svg class="social-list">
-                                                    <use xlink:href="./img/social/social.svg#facebook-icon" width="20" height="20">
-                                                    </use>
-                                                </svg>
-                                            </li>
-                                            <li>
-                                                <svg class="social-list">
-                                                    <use xlink:href="./img/social/social.svg#linkedin-icon" width="20" height="20">
-                                                    </use>
-                                                </svg>
-                                            </li>
-                                        </ul> -->
+                        <div class="team-card">
+                            <h3 class="team">Игорь Демьяненко</h3>
+                            <p class="work-name">Product Designer</p>
+                            <!-- <ul class="list">
+                                <li>
+                                    <svg class="social-list">
+                                        <use xlink:href="./img/social/social.svg#instagram-icon" width="20" height="20">
+                                        </use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="social-list">
+                                        <use xlink:href="./img/social/social.svg#twitter-icon" width="20" height="20">
+                                        </use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="social-list">
+                                        <use xlink:href="./img/social/social.svg#facebook-icon" width="20" height="20">
+                                        </use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg class="social-list">
+                                        <use xlink:href="./img/social/social.svg#linkedin-icon" width="20" height="20">
+                                        </use>
+                                    </svg>
+                                </li>
+                            </ul> -->
+                        </div>
                     </li>
-                    <li>
+                    <li class="team-card-name">
                         <img src="./img/ourteam/img2.jpg" alt="Ольга Репина" width="270" height="260" />
-                        <h3 class="team">Ольга Репина</h3>
-                        <p class="work-name">Frontend Developer</p>
-                        <!-- <ul class="list">
-                                            <li>
-                                                <svg class="social-list">
-                                                    <use xlink:href="./img/social/social.svg#instagram-icon" width="20" height="20">
-                                                    </use>
-                                                </svg>
-                                            </li>
-                                            <li>
-                                                <svg class="social-list">
-                                                    <use xlink:href="./img/social/social.svg#twitter-icon" width="20" height="20"></use>
-                                                </svg>
-                                            </li>
-                                            <li>
-                                                <svg class="social-list">
-                                                    <use xlink:href="./img/social/social.svg#facebook-icon" width="20" height="20">
-                                                    </use>
-                                                </svg>
-                                            </li>
-                                            <li>
-                                                <svg class="social-list">
-                                                    <use xlink:href="./img/social/social.svg#linkedin-icon" width="20" height="20">
-                                                    </use>
-                                                </svg>
-                                            </li>
-                                        </ul> -->
+                        <div class="team-card">
+                            <h3 class="team">Ольга Репина</h3>
+                            <p class="work-name">Frontend Developer</p>
+                            <!-- <ul class="list">
+                                    <li>
+                                        <svg class="social-list">
+                                            <use xlink:href="./img/social/social.svg#instagram-icon" width="20" height="20">
+                                            </use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg class="social-list">
+                                            <use xlink:href="./img/social/social.svg#twitter-icon" width="20" height="20"></use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg class="social-list">
+                                            <use xlink:href="./img/social/social.svg#facebook-icon" width="20" height="20">
+                                            </use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg class="social-list">
+                                            <use xlink:href="./img/social/social.svg#linkedin-icon" width="20" height="20">
+                                            </use>
+                                        </svg>
+                                    </li>
+                                </ul> -->
+                        </div>
                     </li>
-                    <li>
+                    <li class="team-card-name">
                         <img src="./img/ourteam/img3.jpg" alt="Николай Тарасов" width="270" height="260" />
-                        <h3 class="team">Николай Тарасов</h3>
-                        <p class="work-name">Marketing</p>
-                        <!-- <ul class="list">
-                                            <li>
-                                                <svg class="social-list">
-                                                    <use xlink:href="./img/social/social.svg#instagram-icon" width="20" height="20">
-                                                    </use>
-                                                </svg>
-                                            </li>
-                                            <li>
-                                                <svg class="social-list">
-                                                    <use xlink:href="./img/social/social.svg#twitter-icon" width="20" height="20"></use>
-                                                </svg>
-                                            </li>
-                                            <li>
-                                                <svg class="social-list">
-                                                    <use xlink:href="./img/social/social.svg#facebook-icon" width="20" height="20">
-                                                    </use>
-                                                </svg>
-                                            </li>
-                                            <li>
-                                                <svg class="social-list">
-                                                    <use xlink:href="./img/social/social.svg#linkedin-icon" width="20" height="20">
-                                                    </use>
-                                                </svg>
-                                            </li>
-                                        </ul> -->
+                        <div class="team-card">
+                            <h3 class="team">Николай Тарасов</h3>
+                            <p class="work-name">Marketing</p>
+                            <!-- <ul class="list">
+                                    <li>
+                                        <svg class="social-list">
+                                            <use xlink:href="./img/social/social.svg#instagram-icon" width="20" height="20">
+                                            </use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg class="social-list">
+                                            <use xlink:href="./img/social/social.svg#twitter-icon" width="20" height="20"></use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg class="social-list">
+                                            <use xlink:href="./img/social/social.svg#facebook-icon" width="20" height="20">
+                                            </use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg class="social-list">
+                                            <use xlink:href="./img/social/social.svg#linkedin-icon" width="20" height="20">
+                                            </use>
+                                        </svg>
+                                    </li>
+                                </ul> -->
+                        </div>
                     </li>
-                    <li>
+                    <li class="team-card-name">
                         <img src="./img/ourteam/img4.jpg" alt="Михаил Ермаков" width="270" height="260" />
-                        <h3 class="team">Михаил Ермаков</h3>
-                        <p class="work-name">UI Designer</p>
-                        <!-- <ul class="list">
-                                            <li>
-                                                <svg class="social-list">
-                                                    <use xlink:href="./img/social/social.svg#instagram-icon" width="20" height="20">
-                                                    </use>
-                                                </svg>
-                                            </li>
-                                            <li>
-                                                <svg class="social-list">
-                                                    <use xlink:href="./img/social/social.svg#twitter-icon" width="20" height="20"></use>
-                                                </svg>
-                                            </li>
-                                            <li>
-                                                <svg class="social-list">
-                                                    <use xlink:href="./img/social/social.svg#facebook-icon" width="20" height="20">
-                                                    </use>
-                                                </svg>
-                                            </li>
-                                            <li>
-                                                <svg class="social-list">
-                                                    <use xlink:href="./img/social/social.svg#linkedin-icon" width="20" height="20">
-                                                    </use>
-                                                </svg>
-                                            </li>
-                                        </ul> -->
+                        <div class="team-card">
+                            <h3 class="team">Михаил Ермаков</h3>
+                            <p class="work-name">UI Designer</p>
+                            <!-- <ul class="list">
+                                    <li>
+                                        <svg class="social-list">
+                                            <use xlink:href="./img/social/social.svg#instagram-icon" width="20" height="20">
+                                            </use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg class="social-list">
+                                            <use xlink:href="./img/social/social.svg#twitter-icon" width="20" height="20"></use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg class="social-list">
+                                            <use xlink:href="./img/social/social.svg#facebook-icon" width="20" height="20">
+                                            </use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg class="social-list">
+                                            <use xlink:href="./img/social/social.svg#linkedin-icon" width="20" height="20">
+                                            </use>
+                                        </svg>
+                                    </li>
+                                </ul> -->
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -264,30 +275,30 @@
 
         <!-- Наши клиенты -->
 
-        <section class="section">
+        <!-- <section class="section">
             <h2 class="section-name">Постоянные клиенты</h2>
             <ul class="list">
-                <!-- <li><a href=""><img src="./img/Client1.svg" alt="YA&CO" width="170" height="90"></a></li>
+                <li><a href=""><img src="./img/Client1.svg" alt="YA&CO" width="170" height="90"></a></li>
                 <li><a href=""><img src="./img/Client2.svg" alt="Company tagline here" width="170" height="90"></a></li>
                 <li><a href=""><img src="./img/Client3.svg" alt="Company" width="170" height="90"></a></li>
                 <li><a href=""><img src="./img/Client4.svg" alt="Foster Peters" width="170" height="90"></a></li>
                 <li><a href=""><img src="./img/Client5.svg" alt="Brand" width="170" height="90"></a></li>
-                <li><a href=""><img src="./img/Client6.svg" alt="Company tag line" width="170" height="90"></a></li> -->
+                <li><a href=""><img src="./img/Client6.svg" alt="Company tag line" width="170" height="90"></a></li>
             </ul>
-        </section>
+        </section> -->
     </main>
 
     <!--  Футер  -->
     <footer class="footer container">
         <div class="footer-container">
-            <a href="./index.html"><img src="./img/WebStudioFoot.svg" alt="WebStudio"></a>
-
             <address class="adress">
+                <a href="./index.html"><img src="./img/WebStudioFoot.svg" alt="WebStudio" class="footer-logo"></a>
                 <ul class="contacts-footer-list">
-                    <li>
+                    <li class="footer-list-link">
                         <a href="" class="adress-title">г. Киев, пр-т Леси Украинки, 26</a>
                     </li>
-                    <li><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
+                    <li class="footer-list-link"><a href="mailto:info@devstudio.com"
+                            class="contacts-link">info@devstudio.com</a></li>
                     <li><a href="tel:+380961111111" class="contacts-link">+380961111111</a></li>
                 </ul>
             </address>
