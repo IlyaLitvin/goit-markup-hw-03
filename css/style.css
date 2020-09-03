@@ -21,9 +21,7 @@ body {
 }
 
 img {
-  display: block;
   object-fit: cover;
-  border-style: none;
 }
 
 .list {
@@ -154,6 +152,11 @@ img {
   margin: 0;
 }
 
+.feature-list {
+  display: flex;
+  list-style: none;
+}
+
 .section-item {
   display: inline-block;
   max-width: 270px;
@@ -199,8 +202,11 @@ img {
   padding: 0;
 }
 
-.team-card-name {
+.team-card-name:not(:last-child) {
   margin-right: 30px;
+}
+
+.team-card-name {
   text-align: center;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -231,11 +237,6 @@ img {
   margin-bottom: 50px;
 }
 
-.section-works {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .section-text {
   font-size: 14px;
   line-height: 1.71;
@@ -251,10 +252,8 @@ img {
   margin: 0;
 }
 
-.works-page-box {
-  object-fit: cover;
+.works-page-box:not(:last-child) {
   margin-right: 30px;
-  width: calc((100% - 2 * 30px) / 3);
 }
 
 .works-page {
@@ -372,12 +371,6 @@ button {
   padding-top: 60px;
 }
 
-.footer-container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 .footer-logo {
   margin-bottom: 20px;
 }
@@ -385,6 +378,7 @@ button {
 .adress {
   font-style: normal;
   width: 270px;
+  margin-left: 215px;
 }
 
 .adress-title {
