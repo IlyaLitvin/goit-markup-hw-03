@@ -20,6 +20,10 @@ body {
   line-height: 1.4;
 }
 
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -54,16 +58,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-}
-
-.logo {
-  color: var(--title-text-color);
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
 }
 
 /* navigation */
@@ -144,6 +138,7 @@ body {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+  margin: 0;
 }
 
 .section-item {
@@ -334,6 +329,9 @@ button {
 
 .footer {
   background: #2f303a;
+}
+
+.footer-container {
 }
 
 .adress {
