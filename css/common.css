@@ -255,7 +255,7 @@ img {
 }
 
 /* Button */
-button {
+.button {
   color: var(--title-text-color);
   background-color: var(--third-white-color);
   font-family: Roboto;
@@ -289,7 +289,7 @@ button {
   color: var(--title-text-color);
 }
 
-button {
+.button {
   display: inline-block;
   padding: 6px 22px;
   font-family: inherit;
@@ -306,12 +306,12 @@ button {
   margin-right: 8px;
 }
 
-button:hover,
-button:focus {
+.button:hover,
+.button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
-button {
+.button {
   cursor: pointer;
 }
