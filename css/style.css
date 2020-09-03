@@ -11,13 +11,6 @@
   outline: 1px solid red;
 } */
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
@@ -30,6 +23,7 @@ body {
 img {
   display: block;
   object-fit: cover;
+  border-style: none;
 }
 
 .list {
@@ -52,23 +46,17 @@ img {
   align-items: center;
   width: 270px;
   height: 120px;
-  border: 1px solid transparent;
   background-color: var(--box-bg-color);
   margin-bottom: 30px;
 }
 
 /* header */
-.header {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 
 .container {
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  border: 1px solid transparent;
 }
 
 /* navigation */
@@ -94,6 +82,10 @@ img {
   margin-right: 50px;
 }
 
+.header-list {
+  list-style: none;
+}
+
 .site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
@@ -101,6 +93,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .link:hover,
@@ -130,12 +125,6 @@ img {
   max-width: 696px;
   margin: 0 auto;
   text-align: center;
-}
-
-.hero-section {
-  width: 1200px;
-  margin: 0 auto;
-  border: 1px solid transparent;
 }
 
 .hero-title {
@@ -178,9 +167,11 @@ img {
 .section {
   padding-bottom: 94px;
   padding-top: 94px;
-  width: 1200px;
   margin: 0 auto;
-  border: 1px solid transparent;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .section-title {
@@ -202,7 +193,14 @@ img {
   padding-bottom: 10px;
 }
 
+.section-team-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
 .team-card-name {
+  margin-right: 30px;
   text-align: center;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -255,15 +253,13 @@ img {
 
 .works-page-box {
   object-fit: cover;
-  margin: 0 0;
+  margin-right: 30px;
+  width: calc((100% - 2 * 30px) / 3);
 }
 
 .works-page {
   list-style: none;
   display: flex;
-  padding: 0;
-  margin: 0;
-  justify-content: space-between;
   font-size: 0;
 }
 
@@ -292,13 +288,6 @@ img {
 .our-work {
   margin-top: 0;
   margin-bottom: 50px;
-}
-.section-team-list {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  justify-content: space-between;
-  font-size: 0;
 }
 
 /* Button */
